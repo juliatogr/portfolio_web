@@ -4,8 +4,8 @@ services:
     image: portfolio-web:latest
     container_name: portfolio-web
     restart: unless-stopped
-    # No published ports: Caddy reaches the container through the shared network
-    # at http://portfolio-web:80
+    expose:
+      - "5172"
     networks:
       - web-gateway
 
