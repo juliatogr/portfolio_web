@@ -4,17 +4,17 @@ import { Game, MusicalProject, Profile, WebApp } from './portfolio.models';
 // Images go in /public (e.g. public/images/game.png -> imageUrl: 'images/game.png').
 
 export const PROFILE: Profile = {
-  name: 'Your Name',
+  name: 'Júlia Tortosa',
   role: 'Musician & Game Developer',
-  location: 'City, Country',
+  location: 'Barcelona, Spain',
   bio: [
-    'Write a short introduction about yourself here: who you are and what you do.',
-    'Add a second paragraph about your background, studies or what drives your work.',
+    'Hi! I am a musician and game developer with a passion for creating interactive experiences. I have been working in the industry for several years, honing my skills in both music production and game design.',
+    'Some of my notable projects include small-scale games using C++, and creating digitalmusic. I enjoy collaborating with other creatives and bringing unique ideas to life.',
   ],
   skills: ['Angular', 'TypeScript', 'Unity', 'C#', 'Music production', 'Composition'],
   links: [
     { label: 'GitHub', url: 'https://github.com/juliatogr' },
-    { label: 'Email', url: 'mailto:you@example.com' },
+    { label: 'Email', url: 'mailto:juliatogr@gmail.com' },
   ],
 };
 
