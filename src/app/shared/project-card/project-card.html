@@ -1,0 +1,36 @@
+<article class="card">
+  @if (project().imageUrl; as img) {
+    <img class="cover" [src]="img" [alt]="project().title" loading="lazy" />
+  } @else {
+    <div class="cover placeholder" aria-hidden="true">{{ project().title.charAt(0) }}</div>
+  }
+
+  <div class="body">
+    <header>
+      <h2>{{ project().title }}</h2>
+      <span class="year">{{ project().year }}</span>
+    </header>
+
+    @if (subtitle()) {
+      <p class="subtitle">{{ subtitle() }}</p>
+    }
+
+    <p>{{ project().description }}</p>
+
+    @if (project().tags.length) {
+      <ul class="tags">
+        @for (tag of project().tags; track tag) {
+          <li>{{ tag }}</li>
+        }
+      </ul>
+    }
+
+    @if (project().links.length) {
+      <div class="links">
+        @for (link of project().links; track link.url) {
+          <a [href]="link.url" target="_blank" rel="noopener">{{ link.label }} →</a>
+        }
+      </div>
+    }
+  </div>
+</article>

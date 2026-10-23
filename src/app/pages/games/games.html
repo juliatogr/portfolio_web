@@ -1,0 +1,13 @@
+<h1 class="page-title">Developed Games</h1>
+<p class="page-intro">Games I've designed and built, from game jams to bigger projects.</p>
+
+<div class="card-grid">
+  @for (game of games; track game.title) {
+    <app-project-card
+      [project]="game"
+      [subtitle]="game.engine + ' · ' + game.platforms.join(', ')"
+    />
+  } @empty {
+    <p>No games yet.</p>
+  }
+</div>

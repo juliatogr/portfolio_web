@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" routerLink="/">{{ profile.name }}</a>
+
+    <nav class="tabs" aria-label="Main sections">
+      @for (tab of tabs; track tab.path) {
+        <a
+          class="tab"
+          [routerLink]="tab.path"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          {{ tab.label }}
+        </a>
+      }
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <router-outlet />
+</main>
+
+<footer class="site-footer">
+  <div class="container">© {{ year }} {{ profile.name }}</div>
+</footer>

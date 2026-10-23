@@ -1,0 +1,10 @@
+<h1 class="page-title">Musical Projects</h1>
+<p class="page-intro">Albums, bands, soundtracks and other music I've worked on.</p>
+
+<div class="card-grid">
+  @for (project of projects; track project.title) {
+    <app-project-card [project]="project" [subtitle]="project.role" />
+  } @empty {
+    <p>No projects yet.</p>
+  }
+</div>
