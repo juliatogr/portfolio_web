@@ -18,5 +18,10 @@ export const routes: Routes = [
     title: 'Developed Games',
     loadComponent: () => import('./pages/games/games').then((m) => m.Games),
   },
+  {
+    path: 'apps',
+    title: 'Web Apps',
+    loadComponent: () => import('./pages/web-apps/web-apps').then((m) => m.WebApps),
+  },
   { path: '**', redirectTo: 'biography' },
 ];

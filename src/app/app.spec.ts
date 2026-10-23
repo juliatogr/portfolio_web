@@ -16,7 +16,7 @@ describe('App', () => {
     expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render the three tabs', async () => {
+  it('should render all the tabs', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const tabs = (fixture.nativeElement as HTMLElement).querySelectorAll('.tab');
@@ -24,6 +24,7 @@ describe('App', () => {
       'Biography',
       'Musical Projects',
       'Developed Games',
+      'Web Apps',
     ]);
   });
 });

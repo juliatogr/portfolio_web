@@ -27,6 +27,11 @@ export interface MusicalProject extends Project {
   role: string;
 }
 
+export interface WebApp extends Project {
+  /** Short label shown under the title (e.g. "Progressive Web App"). */
+  kind: string;
+}
+
 export interface Game extends Project {
   engine: string;
   platforms: string[];

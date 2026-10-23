@@ -1,0 +1,10 @@
+<h1 class="page-title">Web Apps</h1>
+<p class="page-intro">Tools and apps I've built for the web. Click to try them live.</p>
+
+<div class="card-grid">
+  @for (app of apps; track app.title) {
+    <app-project-card [project]="app" [subtitle]="app.kind" />
+  } @empty {
+    <p>No apps yet.</p>
+  }
+</div>

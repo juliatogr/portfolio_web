@@ -1,4 +1,4 @@
-import { Game, MusicalProject, Profile } from './portfolio.models';
+import { Game, MusicalProject, Profile, WebApp } from './portfolio.models';
 
 // Placeholder content: replace it with your own.
 // Images go in /public (e.g. public/images/game.png -> imageUrl: 'images/game.png').
@@ -55,5 +55,17 @@ export const GAMES: Game[] = [
     description: 'A second game to show how the list scales.',
     tags: ['Platformer'],
     links: [{ label: 'Source code', url: '#' }],
+  },
+];
+
+export const WEB_APPS: WebApp[] = [
+  {
+    title: 'Music Bingo',
+    year: 2026,
+    kind: 'Progressive Web App',
+    description:
+      'A musical bingo played with a Spotify playlist: generate cards, play the songs and mark them as they sound. Saves each game so you can continue later.',
+    tags: ['Spotify API', 'Node.js', 'PWA'],
+    links: [{ label: 'Open app', url: 'https://musicbingo.juliatogr.myaddr.io/' }],
   },
 ];

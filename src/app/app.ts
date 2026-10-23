@@ -16,5 +16,6 @@ export class App {
     { path: '/biography', label: 'Biography' },
     { path: '/music', label: 'Musical Projects' },
     { path: '/games', label: 'Developed Games' },
+    { path: '/apps', label: 'Web Apps' },
   ];
 }

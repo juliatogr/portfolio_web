@@ -26,6 +26,7 @@ src/app/
     biography/             /biography
     musical-projects/      /music
     games/                 /games
+    web-apps/              /apps
   shared/project-card/     Reusable card used by music and games
 src/styles.scss            Global styles and color tokens (light/dark)
 public/                    Static files (images, favicon)
